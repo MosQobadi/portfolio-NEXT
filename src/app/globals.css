@@ -1,9 +1,5 @@
 @import "tailwindcss";
-
-/* globals.css or any global CSS file */
-/* @tailwind utilities; */
-
-/* Optional: your custom variables */
+@tailwind utilities;
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -12,6 +8,14 @@
   }
 }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
+progress::-webkit-progress-bar {
+  @apply bg-gray-200 rounded;
+}
+
+progress::-webkit-progress-value {
+  @apply bg-gray-700 rounded;
+}
+
+progress::-moz-progress-bar {
+  @apply bg-blue-500 rounded;
 }

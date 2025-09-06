@@ -86,7 +86,7 @@ export function Hero() {
 
   return (
     <div>
-      <header className="fixed bg-base-300 text-base-content shadow-lg inset-x-0 top-0 z-50">
+      <header className="fixed bg-gray-50 text-base-content shadow-lg inset-x-0 top-0 z-50">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
           aria-label="Global"
@@ -120,18 +120,16 @@ export function Hero() {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <label className="swap swap-rotate">
+            {/* <label className="swap swap-rotate">
               <input
                 type="checkbox"
                 className="hidden"
                 onChange={handleToggle}
-                checked={theme === "dark"} // not "light"
+                checked={theme === "dark"}
               />
               <SunIcon className="swap-off fill-current w-6 h-6" />{" "}
-              {/* visible in light theme */}
               <MoonIcon className="swap-on fill-current w-6 h-6" />{" "}
-              {/* visible in dark theme */}
-            </label>
+            </label> */}
           </div>
         </nav>
         <Dialog
@@ -203,11 +201,6 @@ export function Hero() {
               />
             </div>
             <div className="grid justify-center items-center mt-3">
-              {/* <div className="text-center">
-                <div className="text-2xl tracking-tight sm:text-3xl">
-                  Hello, I'm
-                </div>
-              </div> */}
               <div className="text-center">
                 <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
                   Mostafa Qobadi
@@ -224,13 +217,6 @@ export function Hero() {
                     repeat={Infinity}
                   />
                 </p>
-                {/* <div className="mt-10 flex items-center justify-center gap-x-6">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Nulla venenatis quis nibh ut laoreet. Sed imperdiet leo nec
-                    ex dapibus mollis.
-                  </p>
-                </div> */}
                 <div className="mt-10 flex items-center justify-center gap-x-4">
                   <a
                     href="https://www.linkedin.com/in/mostafa-qobadi-a26691241/"

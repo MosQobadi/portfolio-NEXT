@@ -1,5 +1,5 @@
 import type { Config as TailwindConfig } from "tailwindcss";
-import daisyui from "daisyui";
+// import daisyui from "daisyui";
 
 // Extend TailwindConfig to include DaisyUI options
 interface TailwindConfigWithDaisyUI extends TailwindConfig {
@@ -18,7 +18,7 @@ const config: TailwindConfigWithDaisyUI = {
   theme: {
     extend: {},
   },
-  plugins: [daisyui],
+  plugins: [],
   daisyui: {
     themes: ["light", "dark"], // must match the theme names you toggle
   },

@@ -85,7 +85,7 @@ export function Skills() {
         </div>
         <div className="mx-auto max-w-4xl  ">
           <div
-            className="mt-10 max-w-2xl sm:mt-10 lg:mt-10 lg:max-w-4xl bg-base-200 ring-2 ring-base-300 rounded-2xl p-5 shadow-xl"
+            className="mt-10 max-w-2xl sm:mt-10 lg:mt-10 lg:max-w-4xl  ring-2 ring-gray-200 bg-gray-50 rounded-2xl p-5 shadow-xl"
             data-aos="zoom-in"
           >
             <p className="text-2xl text-center font-bold mb-6">
@@ -100,13 +100,13 @@ export function Skills() {
                     </div>
                     {frontend.name}
                   </dt>
-                  <dd className="mt-2 text-base leading-7">
+                  <div className="mt-2 text-base leading-7">
                     <progress
-                      className="progress w-3/4"
+                      className="h-2 w-3/4"
                       value={frontend.value}
                       max="100"
                     ></progress>
-                  </dd>
+                  </div>
                 </div>
               ))}
             </dl>
@@ -149,7 +149,7 @@ export function Skills() {
         </div>
         <div className="mx-auto max-w-4xl">
           <div
-            className="mt-10 max-w-2xl sm:mt-10 lg:mt-10 lg:max-w-4xl bg-base-200 ring-2 ring-base-300 rounded-2xl p-5 shadow-xl"
+            className="mt-10 max-w-2xl sm:mt-10 lg:mt-10 lg:max-w-4xl ring-2 ring-gray-200 bg-gray-50 rounded-2xl p-5 shadow-xl"
             data-aos="zoom-in"
           >
             <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-6">

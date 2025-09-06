@@ -75,7 +75,7 @@ export function Projects() {
               className="group max-w-2xl w-full"
             >
               <div
-                className="relative ring-1 ring-base-300 bg-base-200 rounded-2xl shadow-xl h-full flex flex-col"
+                className="relative ring-1 ring-gray-200 bg-gray-50 rounded-2xl shadow-xl h-full flex flex-col"
                 data-aos="flip-left"
               >
                 <div className="aspect-w-16 aspect-h-9 w-full overflow-hidden rounded-t-2xl">
