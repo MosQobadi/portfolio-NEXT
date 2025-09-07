@@ -1,5 +1,5 @@
 import Image from "next/image";
-import avatar from "../../../public/avatar.png";
+import avatar from "../../../public/avatar.jpg";
 import { AosWrapper } from "@/components/AosWrapper";
 import Menu from "@/components/Menu";
 import AnimatedText from "@/components/AnimatedText";
