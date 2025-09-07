@@ -90,10 +90,12 @@ export function Contact() {
                     name="firstName"
                     id="firstName"
                     autoComplete="given-name"
-                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1 ring-inset ring-base-content focus:ring-2 focus:ring-inset focus:ring-current sm:text-sm sm:leading-6"
+                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1 ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-current sm:text-sm sm:leading-6"
                   />
                   {errors.firstName && (
-                    <p className="text-red-500">{errors.firstName.message}</p>
+                    <p className="fixed ml-2 mt-1 text-xs text-red-600 font-medium">
+                      {errors.firstName.message}
+                    </p>
                   )}
                 </div>
               </div>
@@ -113,10 +115,12 @@ export function Contact() {
                     name="lastName"
                     id="lastName"
                     autoComplete="family-name"
-                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1 ring-inset ring-base-content focus:ring-2 focus:ring-inset focus:ring-current sm:text-sm sm:leading-6"
+                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1  ring-gray-500 focus:ring-1 focus:ring-inset focus:ring-current sm:text-sm sm:leading-6"
                   />
                   {errors.lastName && (
-                    <p className="text-red-500">{errors.lastName.message}</p>
+                    <p className="fixed ml-2 mt-1 text-xs text-red-600 font-medium">
+                      {errors.lastName.message}
+                    </p>
                   )}
                 </div>
               </div>
@@ -140,10 +144,12 @@ export function Contact() {
                     name="email"
                     id="email"
                     autoComplete="email"
-                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1 ring-inset ring-base-content focus:ring-2 focus:ring-inset focus:ring-current sm:text-sm sm:leading-6"
+                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1 ring-gray-500 focus:ring-1 focus:ring-inset  sm:text-sm sm:leading-6"
                   />
                   {errors.email && (
-                    <p className="text-red-500">{errors.email.message}</p>
+                    <p className="fixed ml-2 mt-1 text-xs text-red-600 font-medium">
+                      {errors.email.message}
+                    </p>
                   )}
                 </div>
               </div>
@@ -162,11 +168,13 @@ export function Contact() {
                     name="message"
                     id="message"
                     rows={4}
-                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1 ring-inset ring-base-content focus:ring-2 focus:ring-inset focus:ring-current sm:text-sm sm:leading-6"
+                    className="block bg-transparent w-full rounded-md border-0 px-3.5 py-2 text-current ring-1  ring-gray-500 focus:ring-1 focus:ring-inset  sm:text-sm sm:leading-6"
                     defaultValue={""}
                   />
                   {errors.message && (
-                    <p className="text-red-500">{errors.message.message}</p>
+                    <p className="fixed ml-2 mt-1 text-xs text-red-600 font-medium">
+                      {errors.message.message}
+                    </p>
                   )}
                 </div>
               </div>
