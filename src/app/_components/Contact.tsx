@@ -61,10 +61,10 @@ export function Contact() {
       <div className="py-24 sm:py-32" id="contact">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-xl leading-7">Get in touch</h2>
-            <p className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
+            <p className="text-xl leading-7">Get in touch</p>
+            <h2 className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
               Contact Me
-            </p>
+            </h2>
           </div>
           <form
             action=""

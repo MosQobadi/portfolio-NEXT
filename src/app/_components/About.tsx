@@ -32,12 +32,12 @@ export function About() {
           <div className="lg:col-span-2 lg:col-start-1 lg:row-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:grid-cols-2 lg:gap-x-8 lg:px-8">
             <div className="lg:pr-4">
               <div className="lg:max-w-lg">
-                <p
+                <h2
                   className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl"
                   data-aos="fade-right"
                 >
                   About Me
-                </p>
+                </h2>
                 <p className="mt-6 text-lg leading-8" data-aos="fade-right">
                   Front-End Developer with over 2 years of experience delivering
                   responsive, user-focused web applications. Skilled in React,

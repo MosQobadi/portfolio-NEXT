@@ -21,10 +21,10 @@ export function Projects() {
       <div id="projects">
         <div className="mx-auto max-w-2xl text-center mt-40">
           <div className="text-center">
-            <h2 className="text-lg leading-7">Browse my recent</h2>
-            <p className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
+            <p className="text-lg leading-7">Browse my recent</p>
+            <h2 className="mt-2 text-4xl font-bold tracking-tight sm:text-6xl">
               Projects
-            </p>
+            </h2>
           </div>
 
           <div className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 xl:gap-x-8 place-items-center">

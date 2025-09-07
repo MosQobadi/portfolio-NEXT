@@ -30,9 +30,9 @@ export function Hero() {
                   <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
                     Mostafa Qobadi
                   </h1>
-                  <p className="mt-6 text-2xl leading-8">
+                  <h4 className="mt-6 text-2xl leading-8">
                     <AnimatedText />
-                  </p>
+                  </h4>
                   <div className="mt-10 flex items-center justify-center gap-x-4">
                     <button className="btn btn-outline btn-square ">
                       <a
