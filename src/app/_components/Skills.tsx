@@ -8,6 +8,11 @@ const frontend = [
     icon: CheckCircleIcon,
   },
   {
+    name: "Next",
+    value: 50,
+    icon: CheckCircleIcon,
+  },
+  {
     name: "JavaScript",
     value: 70,
     icon: CheckCircleIcon,
@@ -27,11 +32,11 @@ const frontend = [
     value: 50,
     icon: CheckCircleIcon,
   },
-  {
-    name: "HTML/CSS",
-    value: 80,
-    icon: CheckCircleIcon,
-  },
+  // {
+  //   name: "HTML/CSS",
+  //   value: 80,
+  //   icon: CheckCircleIcon,
+  // },
 ];
 
 export function Skills() {
@@ -47,7 +52,7 @@ export function Skills() {
           </div>
           <div className="mx-auto max-w-4xl  ">
             <div
-              className="mt-10 max-w-2xl sm:mt-10 lg:mt-10 lg:max-w-4xl  ring-2 ring-gray-200 bg-gray-50 rounded-2xl p-5 shadow-xl"
+              className="mt-10 max-w-2xl sm:mt-10 lg:mt-10 lg:max-w-4xl  ring-2 ring-gray-200 bg-gray-50 rounded-2xl p-5 shadow-xl pb-8"
               data-aos="zoom-in"
             >
               <p className="text-2xl text-center font-bold mb-6">
@@ -89,13 +94,19 @@ export function Skills() {
             >
               <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-6">
                 <span className="mt-3 list-item list-inside text-lg font-bold">
+                  React Query
+                </span>
+                <span className="mt-3 list-item list-inside text-lg font-bold">
+                  Tailwind CSS
+                </span>
+                <span className="mt-3 list-item list-inside text-lg font-bold">
                   Redux
                 </span>
                 <span className="mt-3 list-item list-inside text-lg font-bold">
-                  Redux Tool Kit
+                  Material-UI
                 </span>
                 <span className="mt-3 list-item list-inside text-lg font-bold">
-                  React Query
+                  Redux Tool Kit
                 </span>
                 <span className="mt-3 list-item list-inside text-lg font-bold">
                   Context API
@@ -106,15 +117,11 @@ export function Skills() {
                 <span className="mt-3 list-item list-inside text-lg font-bold">
                   React Hook Form
                 </span>
-                <span className="mt-3 list-item list-inside text-lg font-bold">
-                  Tailwind CSS
-                </span>
+
                 <span className="mt-3 list-item list-inside text-lg font-bold">
                   CSS modules / Styled Components
                 </span>
-                <span className="mt-3 list-item list-inside text-lg font-bold">
-                  Material-UI
-                </span>
+
                 <span className="mt-3 list-item list-inside text-lg font-bold">
                   Agile / Scrum
                 </span>
