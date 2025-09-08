@@ -53,15 +53,15 @@ export function Skills() {
               <p className="text-2xl text-center font-bold mb-6">
                 Frontend Development
               </p>
-              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-6">
+              <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-6">
                 {frontend.map((frontend) => (
                   <div key={frontend.name} className="relative pl-16">
-                    <dt className="text-base font-semibold leading-7">
+                    <div className="text-base font-semibold leading-7">
                       <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg">
                         <frontend.icon className="h-6 w-6" aria-hidden="true" />
                       </div>
                       {frontend.name}
-                    </dt>
+                    </div>
                     <div className="mt-2 text-base leading-7">
                       <progress
                         className="h-2 w-3/4"
@@ -71,7 +71,7 @@ export function Skills() {
                     </div>
                   </div>
                 ))}
-              </dl>
+              </div>
             </div>
           </div>
           <div className="mx-auto max-w-2xl text-center mt-40">
@@ -87,7 +87,7 @@ export function Skills() {
               className="mt-10 max-w-2xl sm:mt-10 lg:mt-10 lg:max-w-4xl ring-2 ring-gray-200 bg-gray-50 rounded-2xl p-5 shadow-xl"
               data-aos="zoom-in"
             >
-              <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-6">
+              <div className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-6 lg:max-w-none lg:grid-cols-2 lg:gap-y-6">
                 <span className="mt-3 list-item list-inside text-lg font-bold">
                   Redux
                 </span>
@@ -118,7 +118,7 @@ export function Skills() {
                 <span className="mt-3 list-item list-inside text-lg font-bold">
                   Agile / Scrum
                 </span>
-              </dl>
+              </div>
             </div>
           </div>
         </div>
