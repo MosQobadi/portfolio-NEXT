@@ -38,7 +38,7 @@ export function About() {
                 >
                   About Me
                 </h2>
-                <p className="mt-6 text-lg leading-8" data-aos="fade-right">
+                {/* <p className="mt-6 text-lg leading-8" data-aos="fade-right">
                   Front-End Developer with over 2 years of experience delivering
                   responsive, user-focused web applications. Skilled in React,
                   TypeScript, and modern styling frameworks such as Material-UI,
@@ -46,7 +46,7 @@ export function About() {
                   and scalable application logic. Dedicated to continuous
                   learning and contributing to innovative projects that address
                   real-world challenges and create meaningful impact.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>
