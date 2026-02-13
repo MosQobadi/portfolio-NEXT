@@ -11,7 +11,7 @@ import { AosWrapper } from "@/components/AosWrapper";
 const features = [
   {
     name: "Age :",
-    description: " 27 years old",
+    description: " 28 years old",
     icon: CalendarIcon,
   },
   {
@@ -88,7 +88,7 @@ export function About() {
                   <p></p>
                   <p className="mt-3 list-item list-inside">
                     Sadra Afzar ( React - TypeScript - React Query - ContextAPI
-                    - Zustand - MUI - HeroUI )<em> 6 months</em>
+                    - Zustand - MUI - HeroUI )<em> August 2025 - present</em>
                   </p>
                   <p className="mt-3 list-item list-inside">
                     Rymon ( React - TypeScript - Fetch API - Redux - MUI - SASS)
