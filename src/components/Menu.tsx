@@ -11,6 +11,20 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-scroll";
 import { AosWrapper } from "./AosWrapper";
 
+type ScrollNavItem = {
+  type: "scroll";
+  name: string;
+  id: string;
+};
+
+type DownloadNavItem = {
+  type: "download";
+  name: string;
+  href: string;
+};
+
+type NavItem = ScrollNavItem | DownloadNavItem;
+
 const useTheme = () => {
   const [theme, setTheme] = useState("light");
   const [mounted, setMounted] = useState(false);
@@ -42,11 +56,16 @@ const useTheme = () => {
   return { theme, setTheme, mounted };
 };
 
-const navigation = [
-  { name: "About Me", id: "about" },
-  { name: "Skills", id: "skills" },
-  { name: "Projects", id: "projects" },
-  { name: "Contact Me", id: "contact" },
+const navigation: NavItem[] = [
+  { type: "scroll", name: "About Me", id: "about" },
+  { type: "scroll", name: "Skills", id: "skills" },
+  { type: "scroll", name: "Projects", id: "projects" },
+  { type: "scroll", name: "Contact Me", id: "contact" },
+  {
+    type: "download",
+    name: "Resume",
+    href: "/mostafa-qobadi-resume-frontend-developer.pdf",
+  },
 ];
 
 const Menu = () => {
@@ -97,20 +116,35 @@ const Menu = () => {
           </button>
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
-          {navigation.map((item) => (
-            <Link
-              key={item.id}
-              to={item.id}
-              spy={true}
-              smooth={true}
-              offset={50}
-              duration={500}
-              className="text-sm font-semibold leading-6 cursor-pointer relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-current after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
-            >
-              {item.name}
-            </Link>
-          ))}
+          {navigation.map((item) =>
+            item.type === "scroll" ? (
+              <Link
+                key={item.id}
+                to={item.id}
+                spy
+                smooth
+                offset={50}
+                duration={500}
+                className="text-sm font-semibold leading-6 cursor-pointer relative w-fit block
+          after:block after:content-[''] after:absolute after:h-[3px]
+          after:bg-current after:w-full after:scale-x-0
+          after:hover:scale-x-100 after:transition after:duration-300 after:origin-left"
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <a
+                key={item.name}
+                href={item.href}
+                download
+                className="text-sm font-semibold leading-6 cursor-pointer"
+              >
+                {item.name}
+              </a>
+            ),
+          )}
         </div>
+
         <div className="hidden lg:flex lg:flex-1 lg:justify-end"></div>
       </nav>
       <Dialog
@@ -147,19 +181,31 @@ const Menu = () => {
           <div className="mt-6 flow-root">
             <div className="-my-6 divide-y">
               <div className="space-y-2 py-6">
-                {navigation.map((item) => (
-                  <Link
-                    key={item.id}
-                    to={item.id}
-                    spy={true}
-                    smooth={true}
-                    offset={50}
-                    duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 btn btn-ghost"
-                  >
-                    {item.name}
-                  </Link>
-                ))}
+                {navigation.map((item) =>
+                  item.type === "scroll" ? (
+                    <Link
+                      key={item.id}
+                      to={item.id}
+                      spy
+                      smooth
+                      offset={50}
+                      duration={500}
+                      onClick={() => setMobileMenuOpen(false)}
+                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 btn btn-ghost"
+                    >
+                      {item.name}
+                    </Link>
+                  ) : (
+                    <a
+                      key={item.name}
+                      href={item.href}
+                      download
+                      className="-mx-3 block rounded-lg px-3 py-2 font-semibold leading-7 btn btn-ghost"
+                    >
+                      {item.name}
+                    </a>
+                  ),
+                )}
               </div>
             </div>
           </div>
