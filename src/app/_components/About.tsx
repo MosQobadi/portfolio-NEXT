@@ -38,15 +38,15 @@ export function About() {
                 >
                   About Me
                 </h2>
-                {/* <p className="mt-6 text-lg leading-8" data-aos="fade-right">
-                  Front-End Developer with over 2 years of experience delivering
+                <p className="mt-6 text-lg leading-8" data-aos="fade-right">
+                  Front-End Developer with over 3 years of experience delivering
                   responsive, user-focused web applications. Skilled in React,
                   TypeScript, and modern styling frameworks such as Material-UI,
                   with a strong emphasis on crafting seamless user interfaces
                   and scalable application logic. Dedicated to continuous
                   learning and contributing to innovative projects that address
                   real-world challenges and create meaningful impact.
-                </p> */}
+                </p>
               </div>
             </div>
           </div>
@@ -64,21 +64,32 @@ export function About() {
             />
           </div>
         </div>
-        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10">
+        <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-2 lg:items-start lg:gap-y-10 mt-50">
           <div className="lg:col-span-2 lg:col-start-1 lg:mx-auto lg:grid lg:w-full lg:max-w-7xl lg:gap-x-8 lg:px-8">
             <div className="text-base leading-7">
-              <div className="grid gap-x-6 sm:grid-cols-2">
+              <div className="grid gap-x-6 sm:grid-cols-1">
+                <h2
+                  className="mt-2 text-4xl font-bold text-center sm:text-6xl"
+                  data-aos="fade-right"
+                >
+                  Experiences
+                </h2>
                 <div
                   className="ring-2 ring-gray-200 bg-gray-50 rounded-2xl mt-10 p-5 shadow-xl"
                   data-aos="zoom-in"
                 >
-                  <BriefcaseIcon
+                  {/* <BriefcaseIcon
                     className="h-5 w-5 mx-auto"
                     aria-hidden="true"
-                  />
-                  <h2 className=" text-2xl text-center font-bold tracking-tight">
-                    Experience
+                  /> */}
+                  <h2 className=" text-2xl font-bold tracking-tight">
+                    Sadra Afzar
                   </h2>
+                  <p></p>
+                  <p className="mt-3 list-item list-inside">
+                    Sadra Afzar ( React - TypeScript - React Query - ContextAPI
+                    - Zustand - MUI - HeroUI )<em> 6 months</em>
+                  </p>
                   <p className="mt-3 list-item list-inside">
                     Rymon ( React - TypeScript - Fetch API - Redux - MUI - SASS)
                     <em> 6 months</em>
@@ -91,7 +102,7 @@ export function About() {
                     <em> 1 year</em>
                   </p>
                 </div>
-                <div
+                {/* <div
                   className="ring-2 ring-gray-200 bg-gray-50 rounded-2xl mt-10 p-5 shadow-xl"
                   data-aos="zoom-in"
                 >
@@ -111,7 +122,7 @@ export function About() {
                   <p className="mt-3 list-item list-inside">
                     The Ultimate React Course - Jonas Schmedtmann
                   </p>
-                </div>
+                </div> */}
               </div>
               <dl
                 className="mt-10 space-y-8 text-base leading-7 lg:max-w-none"
