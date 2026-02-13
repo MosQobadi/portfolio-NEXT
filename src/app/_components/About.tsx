@@ -41,10 +41,10 @@ export function About() {
                 <p className="mt-6 text-lg leading-8" data-aos="fade-right">
                   Front-End Developer with over 3 years of experience delivering
                   responsive, user-focused web applications. Skilled in React,
-                  TypeScript, and modern styling frameworks such as Material-UI,
-                  with a strong emphasis on crafting seamless user interfaces
-                  and scalable application logic. Dedicated to continuous
-                  learning and contributing to innovative projects that address
+                  TypeScript, and modern styling frameworks such as HeroUI, with
+                  a strong emphasis on crafting seamless user interfaces and
+                  scalable application logic. Dedicated to continuous learning
+                  and contributing to innovative projects that address
                   real-world challenges and create meaningful impact.
                 </p>
               </div>
